@@ -327,9 +327,9 @@ func createCSR(hostName string, data CaData) error {
 }
 
 func main() {
-	// check brew, cfssl, jq, awscli, wget
+	// check brew, cfssl, jq, awscli
 	fmt.Println("Checking tools...")
-	notInstalled := checkTools([]string{"cfssl", "jq", "aws", "wget", "aws_signing_helper"})
+	notInstalled := checkTools([]string{"cfssl", "jq", "aws", "aws_signing_helper"})
 	if len(notInstalled) > 0 {
 		fmt.Println("The following tools are not installed:")
 		for _, tool := range notInstalled {

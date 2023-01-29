@@ -2,13 +2,8 @@
 
 A script for quickly generating IAM roles with specified attributes.
 
-# Requirements
-
-- manifoldco/promptui
-
 # Prerequisites:
 
-- wget must be installed
 - jq must be installed
 - [cfssl](https://github.com/cloudflare/cfssl) must be installed
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) must be installed
@@ -17,16 +12,10 @@ A script for quickly generating IAM roles with specified attributes.
 
 # Usage
 
-### Install required packages:
-
-```shell
-go get github.com/manifoldco/promptui
-```
-
 ### Run the script
 
 ```shell
-go run main.go
+./create_iam_roles_anywhere
 ```
 
 Follow the prompt and enter the required information.
